@@ -1,0 +1,110 @@
+[
+ {
+  "nome": "HandiMap",
+  "descrizione": "Mappa collaborativa delle barriere architettoniche: segnala e condividi.",
+  "immagine": "img/handimap.jpg",
+  "link": "https://handimap.it",
+  "etichetta_link": "Registrati su handimap.it",
+  "whatsapp": "",
+  "in_evidenza": true
+ },
+ {
+  "nome": "Land Auto",
+  "descrizione": "Concessionaria auto: vieni a scoprire le nostre vetture.",
+  "immagine": "img/landauto.png",
+  "link": "",
+  "etichetta_link": "",
+  "whatsapp": "393509635780",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Fotografo Barrasso",
+  "descrizione": "Fotografo di matrimoni: i vostri momenti più belli, raccontati per immagini.",
+  "immagine": "img/barrasso.png",
+  "link": "https://www.instagram.com/sandrobarrassofotografo/",
+  "etichetta_link": "Instagram @sandrobarrassofotografo",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Al Miracolo del Mare",
+  "descrizione": "Ristorante e pescheria – Via Lufrano 31, Volla.",
+  "immagine": "img/miracolo.jpg",
+  "link": "https://lincantodelmare.it",
+  "etichetta_link": "Visita lincantodelmare.it",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Creazioni e Fantasia",
+  "descrizione": "Creazioni artigianali fatte a mano.",
+  "immagine": "img/creazioni.jpg",
+  "link": "https://www.instagram.com/creazioni.e.fantasia/",
+  "etichetta_link": "Instagram @creazioni.e.fantasia",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Computer Senza Paura",
+  "descrizione": "Corsi per imparare a usare il computer con calma e senza ansia.",
+  "immagine": "",
+  "link": "https://lezioni.devsharesrl.it",
+  "etichetta_link": "Vai ai corsi",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Il mondo di Baby Pepita",
+  "descrizione": "Il mondo di Baby Pepita: i libri illustrati di Manilla.",
+  "immagine": "img/manilla.jpg",
+  "link": "https://ilmondodibabypepita.it",
+  "etichetta_link": "Scopri i libri",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "SD Mod Art",
+  "descrizione": "Barbiere uomo ad Afragola: prenota il tuo taglio online dall'app.",
+  "immagine": "img/sdmodart.png",
+  "link": "https://sdmodart.it",
+  "etichetta_link": "Visita sdmodart.it",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "MUOVIAMO LA CITTÀ",
+  "descrizione": "La canzone di HandiMap per una città accessibile a tutti.",
+  "immagine": "img/muoviamo.jpg",
+  "link": "https://www.youtube.com/watch?v=9OEeyOqW85I",
+  "etichetta_link": "Guarda su YouTube",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "DevShare su Telegram",
+  "descrizione": "Consigli pratici di digitale per persone e piccole imprese.",
+  "immagine": "img/devshare.jpg",
+  "link": "https://t.me/devshareac",
+  "etichetta_link": "Segui su Telegram",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "Handimap News",
+  "descrizione": "Notizie su accessibilità, disabilità, inclusione e turismo accessibile.",
+  "immagine": "img/handimap.jpg",
+  "link": "https://t.me/HandimapNews",
+  "etichetta_link": "Segui su Telegram",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "NewsFlow",
+  "descrizione": "Notizie da Napoli, Campania e Afragola: cronaca, sport, scuola e opportunità.",
+  "immagine": "",
+  "link": "https://t.me/NewsFlow_real",
+  "etichetta_link": "Segui su Telegram",
+  "whatsapp": "",
+  "in_evidenza": false
+ }
+]
