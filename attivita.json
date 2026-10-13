@@ -106,5 +106,23 @@
   "etichetta_link": "Segui su Telegram",
   "whatsapp": "",
   "in_evidenza": false
+ },
+ {
+  "nome": "Bar Universal",
+  "descrizione": "Bar.",
+  "immagine": "",
+  "link": "https://www.instagram.com/bar_universal/",
+  "etichetta_link": "Instagram @bar_universal",
+  "whatsapp": "",
+  "in_evidenza": false
+ },
+ {
+  "nome": "CoffeeShop Jane",
+  "descrizione": "Coffee shop.",
+  "immagine": "",
+  "link": "https://www.instagram.com/coffeeshop.jane/",
+  "etichetta_link": "Instagram @coffeeshop.jane",
+  "whatsapp": "",
+  "in_evidenza": false
  }
 ]
