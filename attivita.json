@@ -109,17 +109,17 @@
  },
  {
   "nome": "Bar Universal",
-  "descrizione": "Bar.",
-  "immagine": "",
+  "descrizione": "Caffetteria e cocktail bar.",
+  "immagine": "img/universal.png",
   "link": "https://www.instagram.com/bar_universal/",
   "etichetta_link": "Instagram @bar_universal",
   "whatsapp": "",
   "in_evidenza": false
  },
  {
-  "nome": "CoffeeShop Jane",
+  "nome": "CoffeeShop Jané",
   "descrizione": "Coffee shop.",
-  "immagine": "",
+  "immagine": "img/jane.png",
   "link": "https://www.instagram.com/coffeeshop.jane/",
   "etichetta_link": "Instagram @coffeeshop.jane",
   "whatsapp": "",
