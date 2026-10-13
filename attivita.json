@@ -30,8 +30,8 @@
   "nome": "Al Miracolo del Mare",
   "descrizione": "Ristorante e pescheria – Via Lufrano 31, Volla.",
   "immagine": "img/miracolo.jpg",
-  "link": "https://lincantodelmare.it",
-  "etichetta_link": "Visita lincantodelmare.it",
+  "link": "https://almiracolodelmare.it",
+  "etichetta_link": "Visita almiracolodelmare.it",
   "whatsapp": "",
   "in_evidenza": false
  },
@@ -101,7 +101,7 @@
  {
   "nome": "NewsFlow",
   "descrizione": "Notizie da Napoli, Campania e Afragola: cronaca, sport, scuola e opportunità.",
-  "immagine": "",
+  "immagine": "img/newsflow.jpg",
   "link": "https://t.me/NewsFlow_real",
   "etichetta_link": "Segui su Telegram",
   "whatsapp": "",
