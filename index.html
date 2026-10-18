@@ -2,8 +2,9 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>DevShare – Le nostre attività</title><meta name="description" content="Vetrina delle attività di DevShare SRL">
-<link rel="stylesheet" href="style.css?v=20261013b"></head><body>
+<link rel="stylesheet" href="style.css?v=20261013b"><link rel="stylesheet" href="area.css?v=1"></head><body>
 <header class="top"><h1 class="brand" aria-label="DevShare">&lt;<span class="g">D</span>ev<span class="b">S</span>hare/&gt;</h1><p>DevShare SRL</p></header>
 <main><div id="griglia" class="griglia" aria-live="polite"><noscript>Attiva JavaScript per vedere gli annunci.</noscript></div></main>
-<footer><p><strong>DevShare S.R.L.</strong> · P.IVA 10481861218 · <a href="mailto:info@devsharesrl.it">info@devsharesrl.it</a></p></footer>
-<script src="app.js?v=20261013b"></script></body></html>
+<footer><p><strong>DevShare S.R.L.</strong> · P.IVA 10481861218 · <a href="mailto:info@devsharesrl.it">info@devsharesrl.it</a></p><button type="button" class="ar-tasto" id="ar-apri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Area riservata</button></footer>
+<dialog class="ar-dlg" id="ar-dlg" aria-labelledby="ar-tit"><form id="ar-f" autocomplete="off"><h2 id="ar-tit">Area riservata</h2><p>Inserisci la password per continuare.</p><input id="ar-pw" type="password" aria-label="Password" required><div class="ar-az"><button type="button" id="ar-chiudi">Annulla</button><button id="ar-ok">Entra</button></div><p class="ar-err" id="ar-err" role="alert"></p></form></dialog>
+<script src="app.js?v=20261013b"></script><script src="area.js?v=1"></script></body></html>

@@ -1,0 +1,13 @@
+.ar-tasto{display:inline-flex;align-items:center;gap:.4rem;margin-top:.9rem;padding:.45rem .9rem;border:1px solid #d6dce6;border-radius:999px;background:transparent;color:#6b7587;font:inherit;font-size:.8rem;letter-spacing:.02em;cursor:pointer;min-height:36px}
+.ar-tasto:hover,.ar-tasto:focus-visible{color:#12355b;border-color:#12355b;outline:none}
+.ar-tasto svg{width:14px;height:14px}
+.ar-dlg{border:0;border-radius:18px;padding:1.6rem 1.4rem 1.2rem;width:min(92vw,360px);box-shadow:0 20px 60px rgba(18,53,91,.25);color:#1d2433}
+.ar-dlg::backdrop{background:rgba(18,30,48,.45);backdrop-filter:blur(3px)}
+.ar-dlg h2{margin:0 0 .3rem;font-size:1.15rem;color:#12355b}.ar-dlg p{margin:0 0 1rem;color:#4a5466;font-size:.9rem}
+.ar-dlg input{width:100%;font:inherit;font-size:16px;padding:.8rem .9rem;border:1px solid #d6dce6;border-radius:12px;text-align:center}
+.ar-dlg input:focus{outline:2px solid #12355b;outline-offset:1px}
+.ar-az{display:flex;gap:.5rem;margin-top:.9rem}
+.ar-az button{flex:1;min-height:44px;border-radius:12px;font:inherit;font-weight:600;cursor:pointer}
+#ar-ok{background:#12355b;color:#fff;border:0}#ar-ok:disabled{opacity:.6}
+#ar-chiudi{background:#fff;color:#4a5466;border:1px solid #d6dce6}
+.ar-err{min-height:1.3em;margin:.7rem 0 0;font-size:.85rem;color:#b3261e;text-align:center}
