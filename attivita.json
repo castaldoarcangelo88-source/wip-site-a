@@ -47,7 +47,7 @@
  {
   "nome": "Computer Senza Paura",
   "descrizione": "Corsi per imparare a usare il computer con calma e senza ansia.",
-  "immagine": "",
+  "immagine": "img/computersenzapaura.svg",
   "link": "https://lezioni.devsharesrl.it",
   "etichetta_link": "Vai ai corsi",
   "whatsapp": "",
