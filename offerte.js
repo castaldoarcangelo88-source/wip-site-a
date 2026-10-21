@@ -84,11 +84,15 @@
   box.addEventListener("focusout",function(e){if(!box.contains(e.relatedTarget))pausaTemp=false;});
   box.addEventListener("touchstart",function(){if(!pausaUtente){pausaUtente=true;aggiornaCtrl();avvia();}},{passive:true});
 
+  /* Con app.js presente il banner viene disegnato insieme alla griglia (nessuno spostamento). */
+  function pronto(f){if(window.__dsPronto)window.__dsPronto(f);else f();}
   fetch(SRC,{cache:"no-cache"}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(dati){
-    offerte=valide(Array.isArray(dati)?dati:(dati&&Array.isArray(dati.offerte)?dati.offerte:[]));
-    if(!offerte.length)return;
-    box.classList.add("offerte");if(!ridotto)box.classList.add("of-anim");
-    box.setAttribute("role","region");box.setAttribute("aria-label","Offerte sponsorizzate");
-    box.textContent="";disegna(false);box.hidden=false;avvia();
-  }).catch(function(){box.hidden=true;});
+    pronto(function(){
+      offerte=valide(Array.isArray(dati)?dati:(dati&&Array.isArray(dati.offerte)?dati.offerte:[]));
+      if(!offerte.length)return;
+      box.classList.add("offerte");if(!ridotto)box.classList.add("of-anim");
+      box.setAttribute("role","region");box.setAttribute("aria-label","Offerte sponsorizzate");
+      box.textContent="";disegna(false);box.hidden=false;avvia();
+    });
+  }).catch(function(){pronto(function(){box.hidden=true;});});
 })();
