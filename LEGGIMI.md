@@ -17,3 +17,9 @@ La griglia si adatta da sola: con 1-2 annunci i riquadri sono grandi, con molti 
 
 ## Prova in locale
 `python3 -m http.server 8000` nella cartella, poi apri http://localhost:8000 (aprendo il file direttamente il JSON non si carica).
+
+## Blog (recuperato dal vecchio WordPress, 22/10/2026)
+- `blog/` (indice), `blog/<slug>/` (articoli), `blog/img/` (copertine 1600x800, 800x400, social 1200x630), `blog/blog.css`.
+- Le cartelle in radice con i vecchi indirizzi WordPress (`/<vecchio-slug>/` e `/AAAA/MM/GG/<vecchio-slug>/`) contengono solo redirect (meta refresh + canonical) verso `/blog/<slug>/`.
+- `sitemap.xml` e `robots.txt` in radice. Le pagine riservate non sono nella sitemap.
+- Le pagine sono generate da `genera.py` (fuori dal repository, in /workspace/blog-devshare-recupero/) a partire dai testi in `testi/*.md`.
