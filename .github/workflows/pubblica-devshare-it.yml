@@ -1,0 +1,38 @@
+name: Pubblica devshare.it
+# Pulsante manuale: GitHub (app telefono) > Actions > «Pubblica devshare.it» > Run workflow.
+# Porta il ramo di anteprima su main con un fast-forward (nessuna riscrittura della storia):
+# GitHub Pages pubblica main su devshare.it. Parte solo dopo l'approvazione del Titolare (environment «produzione»).
+on:
+  workflow_dispatch:
+    inputs:
+      ramo:
+        description: "Ramo da pubblicare su main"
+        type: string
+        default: anteprima
+permissions:
+  contents: write
+concurrency:
+  group: pubblica-devshare-it
+  cancel-in-progress: false
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    environment: produzione
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main, fetch-depth: 0 }
+      - name: Controlli sul ramo
+        run: |
+          set -e
+          git fetch origin "${{ inputs.ramo }}"
+          git merge-base --is-ancestor origin/main "origin/${{ inputs.ramo }}" || { echo "Il ramo non parte da main aggiornato: serve un rebase, nessuna pubblicazione."; exit 1; }
+          git diff --stat origin/main "origin/${{ inputs.ramo }}"
+          test -f CNAME && grep -qx 'devshare.it' <(git show "origin/${{ inputs.ramo }}:CNAME") || { echo "CNAME mancante o cambiato"; exit 1; }
+      - name: Fast-forward di main
+        run: |
+          git merge --ff-only "origin/${{ inputs.ramo }}"
+          git push origin main
+      - name: Verifica online
+        run: |
+          sleep 60
+          curl -fsS -o /dev/null -w "devshare.it %{http_code}\n" https://devshare.it/
