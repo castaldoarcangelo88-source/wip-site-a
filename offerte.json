@@ -9,5 +9,16 @@
     "scadenza": "2026-11-16",
     "immagine": "",
     "nota": "Link di presentazione: chi presenta riceve un bonus. Si applicano i Termini e Condizioni di American Express."
+  },
+  {
+    "id": "homobile-unieuro-sim-2026-12",
+    "titolo": "SIM ho. Mobile: 10 € di ricarica omaggio",
+    "testo": "Compra la SIM su Unieuro, attivala con #UNI10 e ricevi il bonus dopo il primo rinnovo. Attivazione entro 31 dicembre.",
+    "testo_pulsante": "Vedi la promo",
+    "link": "https://www.unieuro.it/online/-pidHOVSIMHOOTS",
+    "link_condizioni": "https://supporto.ho-mobile.it/content/dam/hofficina/documenti/Condizioni_Promo_RicaricaOmaggio.pdf",
+    "scadenza": "2026-12-31",
+    "immagine": "",
+    "nota": "Promo di terzi: ho. Mobile e Unieuro sono marchi dei rispettivi titolari. Si applicano le condizioni della promo di ho. Mobile."
   }
 ]

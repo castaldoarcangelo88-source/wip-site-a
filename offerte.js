@@ -42,7 +42,9 @@
     var az=el("div","of-azione"),a=el("a","of-btn",o.testo_pulsante||"Scopri l'offerta");
     a.href=linkSicuro(o.link);a.target="_blank";a.rel="sponsored noopener";
     az.appendChild(a);s.appendChild(az);
-    s.appendChild(el("p","of-nota",o.nota||NOTA));
+    var nota=el("p","of-nota",o.nota||NOTA);
+    if(o.link_condizioni&&linkSicuro(o.link_condizioni)){var c=el("a","of-cond","Condizioni della promo");c.href=linkSicuro(o.link_condizioni);c.target="_blank";c.rel="noopener";nota.appendChild(document.createTextNode(" "));nota.appendChild(c);}
+    s.appendChild(nota);
     box.setAttribute("aria-live",annuncia?"polite":"off");
     if(slide)box.replaceChild(s,slide);else box.insertBefore(s,box.firstChild);
     slide=s;

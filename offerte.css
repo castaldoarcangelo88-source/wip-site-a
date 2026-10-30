@@ -13,7 +13,8 @@
 .of-azione{flex:0 0 auto}
 .of-btn{display:inline-block;padding:.75rem 1.25rem;border-radius:999px;background:var(--of-scuro);color:#fff;font-weight:600;text-decoration:none;border:1px solid #0c2742;white-space:nowrap}
 .of-btn:hover{background:#0c2742}
-.of-nota{flex:1 1 100%;margin:0;font-size:.8rem;color:var(--of-grigio);line-height:1.4}
+.of-nota{flex:1 1 100%;margin:0;font-size:.8rem;color:var(--of-grigio);line-height:1.4;overflow-wrap:anywhere}
+.of-nota a{color:var(--of-scuro);text-decoration:underline}
 .of-ctrl{display:flex;align-items:center;justify-content:center;gap:.35rem;padding:0 1rem .9rem}
 .of-ctrl button{font:inherit;cursor:pointer;border:1px solid #9aa3b0;background:#fff;color:var(--of-scuro);border-radius:999px;min-width:32px;height:32px;padding:0 .6rem;font-size:.85rem;font-weight:600}
 .of-ctrl button:hover{background:#eef1f5}
