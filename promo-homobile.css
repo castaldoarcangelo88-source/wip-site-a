@@ -1,0 +1,22 @@
+/* Striscia promo ho. Mobile (staging). Si nasconde da sola dopo la scadenza: vedi promo-homobile.js */
+.promo-ho[hidden]{display:none!important}
+.promo-ho{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin:0 0 1.5rem;padding:1.1rem 1.5rem;background:#fff;border:1px solid #e3e7ef;border-left:4px solid #f0a020;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.promo-ho-img{flex:0 0 auto;width:72px;height:90px;object-fit:cover;border-radius:10px;background:#0e1830}
+.promo-ho-testo{flex:1 1 320px;min-width:0}
+.promo-ho-etichetta{margin:0 0 .25rem;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#a3650a}
+.promo-ho h2{margin:0 0 .3rem;font-size:1.2rem;line-height:1.3;color:#12355b;overflow-wrap:anywhere}
+.promo-ho-desc{margin:0;color:#4a5466;font-size:.95rem;overflow-wrap:anywhere}
+.promo-ho-azioni{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:.25rem}
+.promo-ho-btn{display:inline-block;padding:.65rem 1.25rem;border-radius:999px;background:#12355b;color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+.promo-ho-btn:hover{background:#0c2742}
+.promo-ho-reg{display:inline-flex;align-items:center;min-height:44px;padding:0 .5rem;font-size:.85rem;color:#12355b}
+.promo-ho a:focus-visible{outline:3px solid #f0a020;outline-offset:2px}
+@media(max-width:600px){
+ .promo-ho{padding:1rem;gap:.75rem 1rem}
+ .promo-ho-img{width:56px;height:70px}
+ .promo-ho-testo{flex:1 1 0}
+ .promo-ho h2{font-size:1.05rem}
+ .promo-ho-azioni{flex:1 1 100%;align-items:stretch;text-align:center}
+ .promo-ho-btn{text-align:center;white-space:normal}
+ .promo-ho-reg{justify-content:center}
+}
