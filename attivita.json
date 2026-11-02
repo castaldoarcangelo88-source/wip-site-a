@@ -5,6 +5,12 @@
   "immagine": "img/handimap.jpg",
   "link": "https://handimap.it",
   "etichetta_link": "Registrati su handimap.it",
+  "social": [
+   {"etichetta": "Seguici su Instagram", "url": "https://www.instagram.com/handimapofficial/"},
+   {"etichetta": "Seguici su YouTube", "url": "https://www.youtube.com/@HandiMap"},
+   {"etichetta": "Seguici su Facebook", "url": "https://www.facebook.com/HandiMapOfficial/"},
+   {"etichetta": "Seguici su TikTok", "url": "https://www.tiktok.com/@handimap.it"}
+  ],
   "whatsapp": "",
   "in_evidenza": true
  },
@@ -46,6 +52,9 @@
   "immagine": "img/creazioni.jpg",
   "link": "https://www.instagram.com/creazioni.e.fantasia/",
   "etichetta_link": "Instagram @creazioni.e.fantasia",
+  "social": [
+   {"etichetta": "Seguici su TikTok", "url": "https://www.tiktok.com/@creazioni.e.fanta_"}
+  ],
   "whatsapp": "",
   "in_evidenza": false
  },
@@ -64,6 +73,9 @@
   "immagine": "img/manilla.jpg",
   "link": "https://ilmondodibabypepita.it",
   "etichetta_link": "Scopri i libri",
+  "social": [
+   {"etichetta": "Anche su manillacastaldo.it", "url": "https://manillacastaldo.it"}
+  ],
   "whatsapp": "",
   "in_evidenza": false
  },
