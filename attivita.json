@@ -30,8 +30,13 @@
   "nome": "Al Miracolo del Mare",
   "descrizione": "Ristorante e pescheria – Via Lufrano 31, Volla.",
   "immagine": "img/miracolo.jpg",
-  "link": "https://almiracolodelmare.it",
-  "etichetta_link": "Visita almiracolodelmare.it",
+  "link": "",
+  "etichetta_link": "",
+  "social": [
+   {"etichetta": "Seguici su Facebook", "url": "https://www.facebook.com/almiracolodelmare/"},
+   {"etichetta": "Seguici su Instagram", "url": "https://www.instagram.com/almiracolodelmare/"},
+   {"etichetta": "Seguici su TikTok", "url": "https://www.tiktok.com/@al_miracolodelmare"}
+  ],
   "whatsapp": "",
   "in_evidenza": false
  },

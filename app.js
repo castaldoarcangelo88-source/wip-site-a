@@ -24,6 +24,7 @@
       c.appendChild(el("h2","",a.nome));c.appendChild(el("p","",a.descrizione));
       var az=el("div","azioni"),u=a.link&&sicuro(a.link);
       if(u)az.appendChild(link(u,a.etichetta_link||"Visita","btn"));
+      (a.social||[]).forEach(function(s){var su=s&&s.url&&sicuro(s.url);if(su)az.appendChild(link(su,s.etichetta||"Social","btn"));});
       var n=(a.whatsapp||"").replace(/\D/g,"");
       if(n)az.appendChild(link("https://wa.me/"+n,"Scrivi su WhatsApp","btn wa"));
       if(az.children.length)c.appendChild(az);g.appendChild(c);
