@@ -1,5 +1,5 @@
-const CACHE_NAME = 'marika-client-review-v2';
-const APP_ASSETS = ['./', './index.html', './privacy.html', './style.css?v=11', './preview-app.js', './manifest.webmanifest', './assets/marika-logo.jpg', './assets/icon-192.png', './assets/icon-512.png'];
+const CACHE_NAME = 'marika-client-review-v3';
+const APP_ASSETS = ['./', './index.html', './privacy.html', './style.css?v=12', './preview-app.js', './manifest.webmanifest', './assets/marika-logo.jpg', './assets/icon-192.png', './assets/icon-512.png'];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_ASSETS)).then(() => self.skipWaiting()));
 });
