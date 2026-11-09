@@ -161,3 +161,12 @@
  .info-grid h3{font-size:19px;margin:8px 0 5px}
  .site-footer{padding:20px 19px}
 }
+
+/* Contatto e refill richiesti da Marika — anteprima */
+.hero-contact{color:#90516f;text-decoration:underline;text-decoration-color:#cda8ba;text-underline-offset:4px}
+.hero-contact:hover{color:#6f3854}
+.refill-note{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:16px;padding:21px 24px;border:1px solid #eadce3;border-radius:10px;background:#f8f0f3}
+.refill-note h3{font:500 21px 'Playfair Display',Georgia,serif;margin:0 0 6px}
+.refill-note p{color:#76646e;font-size:12px;line-height:1.6;margin:0;max-width:680px}
+.refill-note a{flex:none;color:#90516f;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:650px){.hero-contact{width:100%}.refill-note{display:block;padding:17px 18px}.refill-note h3{font-size:19px}.refill-note a{display:inline-block;margin-top:13px}}
