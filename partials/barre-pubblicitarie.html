@@ -1,6 +1,8 @@
 <!-- Barre pubblicitarie DevShare (snippet riusabile). Richiede ads.css e ads.js.
      Da incollare dentro <div class="ds-layout">, subito DOPO </main>:
-     così su mobile (sotto 1200px) le barre finiscono in fondo alla pagina e non coprono il contenuto. -->
+     così su mobile (sotto 1200px) le barre finiscono in fondo alla pagina e non coprono il contenuto.
+     I testi degli spazi in vendita e dei banner News/Prodotto NON stanno qui: sono nel blocco ANNUNCI in cima ad ads.js.
+     Qui restano solo lo slot BBVA (fisso) e i contenitori .ads-dinamici, con un riquadro di riserva per chi non ha JavaScript.-->
 <aside class="ads ads-sx" aria-label="Spazi pubblicitari, colonna sinistra">
  <div class="ad-slot ad-bbva" role="group" aria-labelledby="ad-bbva-marchio">
   <p class="ad-etichetta">Pubblicità</p>
@@ -14,11 +16,8 @@
   </div>
   <a class="ad-btn" href="https://www.bbva.it/promo/passaparola.html" target="_blank" rel="sponsored noopener">Scopri la promo</a>
  </div>
- <a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a>
- <a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a>
+ <div class="ads-dinamici" data-colonna="sx"><a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a></div>
 </aside>
 <aside class="ads ads-dx" aria-label="Spazi pubblicitari, colonna destra">
- <a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a>
- <a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a>
- <a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a>
+ <div class="ads-dinamici" data-colonna="dx"><a class="ad-slot ad-vuoto" href="https://www.devsharesrl.it/contatti/"><span class="ad-etichetta">Pubblicità</span><span class="ad-vuoto-testo">Spazio pubblicitario disponibile – contattaci</span></a></div>
 </aside>

@@ -11,7 +11,9 @@
  .ads{grid-template-columns:1fr;align-content:start;align-self:start;padding:1.5rem 0}
  .ads-sx{grid-area:sx}.ads-dx{grid-area:dx}
 }
-@media(min-width:1200px) and (min-height:820px){.ads{position:sticky;top:0}}
+/* Barre ferme durante lo scorrimento solo se entrano intere nello schermo: la classe la mette ads.js */
+@media(min-width:1200px){.ads.ads-fissa{position:sticky;top:0}}
+.ads-dinamici{display:contents}
 .ad-slot{display:flex;flex-direction:column;gap:.5rem;padding:1rem;background:#fff;border:1px solid #e3e7ef;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.06);color:#1d2433;text-decoration:none;min-width:0;overflow-wrap:anywhere}
 .ad-slot p{margin:0}
 .ad-etichetta{display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b4a07}
@@ -30,3 +32,25 @@
 .ad-vuoto:hover{border-color:#12355b;background:#fff}
 .ad-vuoto-testo{font-weight:600;color:#12355b;line-height:1.35}
 .ad-slot a:focus-visible,.ad-copia:focus-visible,a.ad-slot:focus-visible{outline:3px solid #f0a020;outline-offset:2px}
+
+/* ---- Bollino «Esempio» (contenuti finti) ---- */
+.ad-esempio{display:inline-block;margin-left:.15rem;padding:0 .4rem;border-radius:999px;background:#fde8e6;color:#8a1c12;font-size:.68rem;letter-spacing:.04em}
+/* ---- Spazio in vendita (tipo "libero") ---- */
+.ad-libero{border-top:4px solid #3fbf8a}
+.ad-libero-titolo{font-size:1rem;font-weight:700;line-height:1.3;color:#12355b}
+.ad-libero-testo{font-size:.88rem;line-height:1.45;color:#4a5466}
+.ad-prezzo-spazio{align-self:flex-start;padding:.2rem .6rem;border-radius:8px;background:#e8f7f0;color:#14583a;font-weight:700;font-size:.85rem;white-space:nowrap}
+.ad-btn-scuro{background:#12355b}.ad-btn-scuro:hover{background:#0c2742}
+/* ---- Banner «News» (tipo "news") ---- */
+.ad-news{border-left:4px solid #7f8cff}
+.ad-news-titolo{font-size:1rem;font-weight:700;line-height:1.3;color:#12355b}
+.ad-news-testo{font-size:.88rem;line-height:1.45;color:#4a5466}
+.ad-link{align-self:flex-start;display:inline-flex;align-items:center;min-height:36px;font-weight:600;color:#12355b}
+/* ---- Banner «Prodotto in offerta» (tipo "prodotto") ---- */
+.ad-prodotto{border-top:4px solid #f0a020}
+.ad-prodotto-nome{font-size:1rem;font-weight:700;line-height:1.3;color:#12355b}
+.ad-prezzi{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .5rem}
+.ad-prezzo-prima{color:#5b6576;font-size:.9rem;white-space:nowrap}
+.ad-prezzo-ora{color:#a3260b;font-size:1.35rem;font-weight:800;white-space:nowrap}
+.ad-prodotto-testo{font-size:.85rem;line-height:1.45;color:#4a5466}
+.ad-btn-promo{background:#a3260b}.ad-btn-promo:hover{background:#7f1d08}
