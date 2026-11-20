@@ -141,5 +141,14 @@
   "etichetta_link": "Instagram @coffeeshop.jane",
   "whatsapp": "",
   "in_evidenza": false
+ },
+ {
+  "nome": "Sport Time Online",
+  "descrizione": "Negozio online di scarpe sportive per running, calcio, basket e tennis.",
+  "immagine": "img/ads/sporttimeonline-logo.webp",
+  "link": "https://sporttimeonline.it/",
+  "etichetta_link": "Visita sporttimeonline.it",
+  "whatsapp": "",
+  "in_evidenza": false
  }
 ]

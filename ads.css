@@ -54,7 +54,3 @@
 .ad-prezzo-ora{color:#a3260b;font-size:1.35rem;font-weight:800;white-space:nowrap}
 .ad-prodotto-testo{font-size:.85rem;line-height:1.45;color:#4a5466}
 .ad-btn-promo{background:#a3260b}.ad-btn-promo:hover{background:#7f1d08}
-
-/* Annuncio vero con logo (tipo "inserzionista" in ads.js) */
-.ad-inserzionista{border-top:4px solid #12355b}
-.ad-logo{align-self:center;max-width:100%;height:auto;border-radius:50%}
