@@ -9,7 +9,6 @@
 .pubb-prezzo{display:inline-block;margin:.2rem 0;padding:.6rem 1rem;border-radius:10px;background:#fff7e6;border:2px solid #f0a020;font-size:1.25rem;font-weight:700;color:#12355b}
 .pubb-azioni{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}
 .pubb-azioni .btn{min-height:48px;display:inline-flex;align-items:center}
-.btn.tg{background:#1c6e9e}
 .pubb-nota{font-size:.95rem;color:#4a5466}
 .pubb h3{color:#12355b;font-size:1.05rem;margin:1rem 0 .2rem}
 .pubb h3+p{margin:0}
