@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; style-src 'self'; script-src 'self' https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="../consenso.css?v=2"><script src="../ga-config.js?v=1"></script><script src="../consenso.js?v=2"></script>
+<link rel="stylesheet" href="../consenso.css?v=3"><script src="../ga-config.js?v=1"></script><script src="../consenso.js?v=3"></script>
 <title>Informativa privacy e cookie – DevShare</title><meta name="description" content="Informativa privacy e cookie policy del sito DevShare">
 <link rel="stylesheet" href="../style.css?v=20261021c"><link rel="stylesheet" href="../privacy-cookie.css?v=1"></head><body>
 <header class="top"><p class="brand-link"><a href="/" aria-label="DevShare, torna alla home">&lt;<span class="g">D</span>ev<span class="b">S</span>hare/&gt;</a></p><h1>Informativa privacy e cookie</h1></header>
@@ -14,7 +14,7 @@
 <p>Questa informativa riguarda il sito devshare.it <mark class="dc">[DA CONFERMARE]</mark>.</p>
 <h3>1. Titolare del trattamento</h3>
 <p>DevShare SRL, con sede in Via Gabriele D'Annunzio 11, Afragola (NA), P.IVA e C.F. 10481861218.
-PEC: devsharesrl@pec.it — Email per la privacy: <mark class="dc">[DA COMPLETARE]</mark></p>
+PEC: devsharesrl@pec.it — Email per la privacy: <a href="mailto:devshareac@gmail.com">devshareac@gmail.com</a></p>
 <h3>2. Quali dati trattiamo</h3>
 <ul>
 <li><strong>Dati di navigazione</strong>: indirizzo IP, tipo di browser, pagine richieste, data e ora. Sono trattati dai sistemi del fornitore di hosting che fanno funzionare il sito e lo proteggono.</li>
@@ -52,7 +52,7 @@ PEC: devsharesrl@pec.it — Email per la privacy: <mark class="dc">[DA COMPLETAR
 <h3>4. Per quanto tempo</h3>
 <ul>
 <li>Dati di navigazione: secondo i tempi del fornitore di hosting <mark class="dc">[DA COMPLETARE dopo verifica GitHub]</mark>.</li>
-<li>Dati statistici GA4: 2 mesi <mark class="dc">[DA CONFERMARE quando impostato]</mark>.</li>
+<li>Dati statistici GA4: i dati sugli eventi (per esempio le pagine visitate) sono conservati per 2 mesi; i dati a livello di utente per 14 mesi dall'ultima visita. Poi vengono cancellati automaticamente da Google Analytics.</li>
 <li>Richieste ricevute: per il tempo necessario a gestirle, poi secondo gli obblighi di legge.</li>
 </ul>
 <h3>5. A chi li comunichiamo</h3>
@@ -67,8 +67,8 @@ Non vendiamo i tuoi dati.</li>
 <h3>7. Link esterni e spazi pubblicitari</h3>
 <p>Il sito contiene spazi pubblicitari con link verso siti di terzi, segnalati come "sponsored". Questi spazi <strong>non installano cookie di terzi</strong>. Se clicchi un link, arrivi su un sito esterno che ha la sua informativa privacy e i suoi cookie: non siamo responsabili di quei trattamenti.</p>
 <h3>8. I tuoi diritti</h3>
-<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità dei dati e opporti al trattamento (artt. 15-22 GDPR). Puoi revocare il consenso in qualsiasi momento, senza conseguenze sui trattamenti già fatti, con il pulsante "Preferenze cookie" in fondo a ogni pagina.
-Scrivi a <mark class="dc">[EMAIL PRIVACY — DA COMPLETARE]</mark> o alla PEC devsharesrl@pec.it.
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità dei dati e opporti al trattamento (artt. 15-22 GDPR). Puoi revocare il consenso in qualsiasi momento, senza conseguenze sui trattamenti già fatti, con il pulsante "Preferenze cookie" in fondo a ogni pagina del sito (le pagine di solo reindirizzamento non mostrano contenuti e non usano cookie).
+Scrivi a <a href="mailto:devshareac@gmail.com">devshareac@gmail.com</a> o alla PEC devsharesrl@pec.it.
 Puoi proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it), art. 77 GDPR.</p>
 <h3>9. Decisioni automatizzate</h3>
 <p>Non prendiamo decisioni basate unicamente su trattamenti automatizzati, profilazione compresa.</p>
@@ -81,26 +81,79 @@ Puoi proporre reclamo al Garante per la protezione dei dati personali (www.garan
 <h3>1. Cosa sono cookie e strumenti simili</h3>
 <p>Sono piccole informazioni che il sito salva nel tuo browser (cookie o memoria locale del browser). Alcune servono a far funzionare il sito, altre a misurare le visite.</p>
 <h3>2. Cosa usiamo</h3>
-<p><strong>Strumento tecnico — sempre attivo, non richiede consenso</strong>
-| Nome | Tipo | Scopo | Durata |
-|---|---|---|---|
-| ds-consenso-analytics | Memoria locale del browser (localStorage) | Ricordare se hai scelto Accetta o Rifiuta e quando | 182 giorni, poi viene cancellato e ti richiediamo la scelta |</p>
-<p><strong>Cookie analitici di terze parti — solo dopo il tuo consenso</strong>
-| Nome | Fornitore | Scopo | Durata |
-|---|---|---|---|
-| <em>ga | Google Ireland Limited (Google Analytics 4) | Distinguere i visitatori per statistiche aggregate | 2 anni |
-| _ga</em>[ID] | Google Ireland Limited (Google Analytics 4) | Mantenere lo stato della sessione | 2 anni |</p>
+<p><strong>Strumenti tecnici — sempre attivi, non richiedono consenso</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Tipo</th>
+<th>Scopo</th>
+<th>Durata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ds-consenso-analytics</td>
+<td>Memoria locale del browser (localStorage)</td>
+<td>Ricordare se hai scelto Accetta o Rifiuta e quando</td>
+<td>182 giorni, poi viene cancellato e ti richiediamo la scelta</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>Memoria locale del browser (localStorage)</td>
+<td>Solo se usi l'area riservata: contare i tentativi con password sbagliata, per imporre un'attesa crescente tra un tentativo e l'altro</td>
+<td>Viene azzerato a ogni accesso corretto; resta nel browser finché non cancelli i dati del sito</td>
+</tr>
+<tr>
+<td>pp</td>
+<td>Memoria di sessione del browser (sessionStorage)</td>
+<td>Solo se usi l'area riservata: ricordare, nella scheda in uso, che hai già inserito la password corretta. Contiene solo il valore «1», mai la password</td>
+<td>Fino alla chiusura della scheda</td>
+</tr>
+<tr>
+<td>ds-area</td>
+<td>Database locale del browser (IndexedDB)</td>
+<td>Solo se usi l'area riservata: conservare la chiave di accesso ricavata dalla password, in una forma che il sito può usare ma non leggere né esportare, per aprire le pagine riservate senza chiederti di nuovo la password</td>
+<td>Al massimo 8 ore, e solo finché nella scheda è attivo pp; poi viene cancellata alla visita successiva della home o dell'area riservata</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cookie analitici di terze parti — solo dopo il tuo consenso</strong></p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Fornitore</th>
+<th>Scopo</th>
+<th>Durata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_ga</td>
+<td>Google Ireland Limited (Google Analytics 4)</td>
+<td>Distinguere i visitatori per statistiche aggregate</td>
+<td>2 anni</td>
+</tr>
+<tr>
+<td>_ga_[ID]</td>
+<td>Google Ireland Limited (Google Analytics 4)</td>
+<td>Mantenere lo stato della sessione</td>
+<td>2 anni</td>
+</tr>
+</tbody>
+</table>
 <p>Prima del tuo consenso Google Analytics non viene caricato e nessun dato viene inviato a Google. Se clicchi "Rifiuta" resta attivo solo lo strumento tecnico che ricorda la tua scelta. Non usiamo cookie pubblicitari né di profilazione.
-Informativa di Google: https://policies.google.com/privacy</p>
+Informativa di Google: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></p>
 <p><strong>Spazi pubblicitari</strong>: i link "sponsored" sono semplici collegamenti e non installano cookie di terzi.</p>
 <h3>3. Come gestire il consenso</h3>
 <ul>
-<li>Alla prima visita, dal banner: "Accetta" o "Rifiuta". Scorrere la pagina non vale come consenso.</li>
-<li>In ogni momento, dal pulsante "Preferenze cookie" in fondo alla pagina puoi cambiare o revocare la scelta; se rifiuti, i cookie di Google Analytics vengono cancellati.</li>
+<li>Alla prima visita, dal banner: "Accetta" o "Rifiuta". Chiudere il banner con la X ("Chiudi e rifiuta") o con il tasto Esc vale come "Rifiuta". Scorrere la pagina non vale come consenso.</li>
+<li>In ogni momento, dal pulsante "Preferenze cookie" in fondo a ogni pagina del sito (le pagine di solo reindirizzamento non mostrano contenuti e non usano cookie) puoi cambiare o revocare la scelta; se rifiuti, i cookie di Google Analytics vengono cancellati.</li>
 <li>Dalle impostazioni del browser puoi cancellare o bloccare cookie e dati dei siti.</li>
 </ul>
 <h3>4. Titolare e contatti</h3>
-<p>DevShare SRL — Via Gabriele D'Annunzio 11, Afragola (NA) — P.IVA 10481861218 — PEC devsharesrl@pec.it — Email privacy: <mark class="dc">[DA COMPLETARE]</mark>.
+<p>DevShare SRL — Via Gabriele D'Annunzio 11, Afragola (NA) — P.IVA 10481861218 — PEC devsharesrl@pec.it — Email privacy: <a href="mailto:devshareac@gmail.com">devshareac@gmail.com</a>.
 Per tutto il resto vedi l'Informativa privacy.</p>
 </main>
 <footer><p class="servizio-di"><a href="/">Home</a> · Un servizio di <a href="https://www.devsharesrl.it/">DevShare SRL</a> · <a href="https://www.devsharesrl.it/contatti/">Contatti</a></p><p><strong>DevShare S.R.L.</strong> · P.IVA 10481861218 · <a href="mailto:info@devsharesrl.it">info@devsharesrl.it</a></p></footer>

@@ -1,7 +1,8 @@
 /* Banner cookie + Google Consent Mode v2 per devshare.it.
    - Prima di tutto: consenso "denied" per tutte le categorie.
    - gtag.js viene caricato SOLO dopo "Accetta": prima del consenso nessuna richiesta parte verso Google.
-   - La scelta è salvata in localStorage e si può cambiare dal pulsante "Preferenze cookie" nel footer. */
+   - La scelta è salvata in localStorage e si può cambiare dal pulsante "Preferenze cookie" nel footer.
+   - Senza ga-config.js (area riservata, demo) il banner funziona ma Google Analytics non viene mai caricato. */
 "use strict";
 (function(){
   var CHIAVE="ds-consenso-analytics";
@@ -62,7 +63,9 @@
     az.appendChild(r);az.appendChild(a);
     banner.appendChild(x);banner.appendChild(t);banner.appendChild(p);banner.appendChild(az);
     document.body.appendChild(banner);
+    /* link «Preferenze cookie» in fondo a ogni pagina: se la pagina non ha un footer (area riservata), lo creiamo */
     var f=document.querySelector("footer");
+    if(!f){f=el("footer","cc-footer");document.body.appendChild(f);}
     if(f){var pr=el("p","cc-pref-riga"),b=el("button","cc-pref","Preferenze cookie");b.type="button";b.id="cc-preferenze";
       b.addEventListener("click",function(){mostra(true);});pr.appendChild(b);
       pr.appendChild(document.createTextNode(" · "));var fi=el("a","cc-pref-link",INFO_TESTO);fi.href=INFO_URL;pr.appendChild(fi);

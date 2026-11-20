@@ -14,3 +14,5 @@
 .cc-chiudi:hover{background:#eef1f6;color:#12355b}
 .cc-chiudi:focus-visible,.cc-link:focus-visible,.cc-pref-link:focus-visible{outline:3px solid #f0a020;outline-offset:2px}
 .cc-link,.cc-pref-link{color:#12355b;text-decoration:underline}
+.cc-footer{clear:both;margin:2rem 0 0;padding:.4rem 1rem 1rem;background:#fff;color:#1d2433;text-align:center;font-size:.9rem}
+.cc-footer .cc-pref-riga{margin:0}

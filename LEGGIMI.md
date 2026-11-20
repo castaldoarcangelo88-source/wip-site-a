@@ -47,3 +47,8 @@ Tutti i riquadri (spazi in vendita, News, Prodotto in offerta) stanno nell'elenc
 - Prodotto in offerta – `div.ad-slot.ad-prodotto`: `p.ad-etichetta` («Pubblicità · Promo»), `p.ad-prodotto-nome`, `p.ad-prezzi` con `del.ad-prezzo-prima` (aria-label «prezzo precedente …») e `strong.ad-prezzo-ora` (aria-label «prezzo scontato …»), `p.ad-prodotto-testo`, `a.ad-btn.ad-btn-promo`.
   `{tipo:"prodotto", colonna:"dx", nome:"…", prezzo_prima:"… €", prezzo_ora:"… €", testo:"…", cta:"Scopri l'offerta", link:"…"}`
 - Bollino contenuto finto: `span.ad-esempio` («Esempio»), attivato da `esempio:true`.
+
+## Anteprima 20/11/2026 (barre + GA4 + privacy)
+- «Preferenze cookie» in fondo a ogni pagina: home, `/privacy-cookie/`, area riservata (anche dopo l'apertura: `consenso.js` viene ricaricato) e demo. Le pagine di solo reindirizzamento non hanno contenuti. Senza `ga-config.js` (area riservata e demo) il banner funziona ma Google Analytics non viene mai caricato.
+- Area riservata: `sessionStorage.pp` contiene solo il flag `"1"`, mai la password. La chiave PBKDF2 ricavata dalla password resta in IndexedDB (`ds-area`) come CryptoKey non estraibile, valida al massimo 8 ore e solo con il flag nella scheda (`area-sessione.js`).
+- Demo Marika: font DM Sans e Playfair Display ospitati in `demo/marika/fonts/` (prima da Google Fonts).
