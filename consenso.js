@@ -42,27 +42,42 @@
   function salva(s){try{localStorage.setItem(CHIAVE,JSON.stringify({scelta:s,data:new Date().toISOString()}));}catch(e){}}
 
   var banner=null;
+  var INFO_URL="/privacy-cookie/",INFO_TESTO="Informativa privacy e cookie";
   function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt)e.textContent=txt;return e;}
   function creaBanner(){
     banner=el("section","cc-banner");banner.id="cc-banner";banner.hidden=true;
     banner.setAttribute("role","region");banner.setAttribute("aria-labelledby","cc-tit");
     var t=el("h2","cc-tit","Cookie e statistiche");t.id="cc-tit";
-    var p=el("p","cc-testo","Con il tuo consenso usiamo Google Analytics per contare le visite al sito in forma aggregata, con indirizzo IP anonimizzato. Non usiamo cookie pubblicitari. Se rifiuti, non carichiamo nessuno strumento di statistica. Puoi cambiare scelta in qualsiasi momento da «Preferenze cookie» in fondo alla pagina.");
+    var p=el("p","cc-testo","Con il tuo consenso usiamo Google Analytics per contare le visite al sito in forma aggregata, con indirizzo IP anonimizzato. Non usiamo cookie pubblicitari. Se rifiuti, non carichiamo nessuno strumento di statistica. Puoi cambiare scelta in qualsiasi momento da «Preferenze cookie» in fondo alla pagina. ");
+    var li=el("a","cc-link",INFO_TESTO);li.href=INFO_URL;p.appendChild(li);p.appendChild(document.createTextNode("."));
+    /* X di chiusura: vale esattamente come "Rifiuta" */
+    var x=el("button","cc-chiudi");x.type="button";x.id="cc-chiudi";x.setAttribute("aria-label","Chiudi e rifiuta");
+    var xi=el("span","","\u00d7");xi.setAttribute("aria-hidden","true");x.appendChild(xi);
+    x.addEventListener("click",function(){scegli("rifiuta");});
     var az=el("div","cc-azioni");
     var r=el("button","cc-btn","Rifiuta");r.type="button";r.id="cc-rifiuta";
     var a=el("button","cc-btn","Accetta");a.type="button";a.id="cc-accetta";
     r.addEventListener("click",function(){scegli("rifiuta");});
     a.addEventListener("click",function(){scegli("accetta");});
     az.appendChild(r);az.appendChild(a);
-    banner.appendChild(t);banner.appendChild(p);banner.appendChild(az);
+    banner.appendChild(x);banner.appendChild(t);banner.appendChild(p);banner.appendChild(az);
     document.body.appendChild(banner);
     var f=document.querySelector("footer");
     if(f){var pr=el("p","cc-pref-riga"),b=el("button","cc-pref","Preferenze cookie");b.type="button";b.id="cc-preferenze";
-      b.addEventListener("click",function(){mostra(true);});pr.appendChild(b);f.appendChild(pr);}
+      b.addEventListener("click",function(){mostra(true);});pr.appendChild(b);
+      pr.appendChild(document.createTextNode(" · "));var fi=el("a","cc-pref-link",INFO_TESTO);fi.href=INFO_URL;pr.appendChild(fi);
+      f.appendChild(pr);}
+    /* Esc con il banner aperto vale come "Rifiuta" (non interferisce con le finestre di dialogo aperte) */
+    document.addEventListener("keydown",function(e){
+      if((e.key==="Escape"||e.key==="Esc")&&banner&&!banner.hidden&&!document.querySelector("dialog[open]")){e.preventDefault();scegli("rifiuta");}
+    });
   }
-  function mostra(fuoco){banner.hidden=false;if(fuoco){var b=document.getElementById("cc-accetta");if(b)b.focus();}}
+  /* niente cookie wall: con il banner aperto la pagina resta scorribile e il fondo pagina non resta coperto */
+  function spazio(){document.body.style.paddingBottom=banner&&!banner.hidden?(banner.offsetHeight+24)+"px":"";}
+  window.addEventListener("resize",spazio);
+  function mostra(fuoco){banner.hidden=false;spazio();if(fuoco){var b=document.getElementById("cc-accetta");if(b)b.focus();}}
   function scegli(s){
-    var prima=leggi();salva(s);banner.hidden=true;
+    var prima=leggi();salva(s);banner.hidden=true;spazio();
     if(s==="accetta")caricaGA();
     else{fermaGA();if(prima==="accetta"&&caricato)location.reload();}
   }
