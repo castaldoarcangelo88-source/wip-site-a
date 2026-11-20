@@ -23,3 +23,9 @@ La griglia si adatta da sola: con 1-2 annunci i riquadri sono grandi, con molti 
 - Le cartelle in radice con i vecchi indirizzi WordPress (`/<vecchio-slug>/` e `/AAAA/MM/GG/<vecchio-slug>/`) contengono solo redirect (meta refresh + canonical) verso `/blog/<slug>/`.
 - `sitemap.xml` e `robots.txt` in radice. Le pagine riservate non sono nella sitemap.
 - Le pagine sono generate da `genera.py` (fuori dal repository, in /workspace/blog-devshare-recupero/) a partire dai testi in `testi/*.md`.
+
+## Barre pubblicitarie laterali (staging 20/11/2026)
+- File: `ads.css`, `ads.js`, snippet `partials/barre-pubblicitarie.html` (già inserito in `index.html`).
+- Desktop (da 1200px): barre a sinistra e a destra del contenuto. Sotto 1200px: le barre vanno in fondo, dopo il contenuto.
+- Per vendere uno slot: sostituisci un blocco `<a class="ad-slot ad-vuoto">` con un blocco come quello BBVA (etichetta «Pubblicità» obbligatoria, link esterni con `target="_blank" rel="sponsored noopener"`).
+- Il sito ha una CSP rigida: niente stili o script in linea, solo file locali.
