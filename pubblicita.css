@@ -11,3 +11,7 @@
 .pubb-azioni .btn{min-height:48px;display:inline-flex;align-items:center}
 .btn.tg{background:#1c6e9e}
 .pubb-nota{font-size:.95rem;color:#4a5466}
+.pubb h3{color:#12355b;font-size:1.05rem;margin:1rem 0 .2rem}
+.pubb h3+p{margin:0}
+.pubb-ancora{display:inline-flex;align-items:center;min-height:48px;font-weight:700;color:#12355b}
+#prenota{scroll-margin-top:1rem}
