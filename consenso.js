@@ -37,7 +37,8 @@
       }
     });
   }
-  function leggi(){try{var v=JSON.parse(localStorage.getItem(CHIAVE)||"null");return v&&(v.scelta==="accetta"||v.scelta==="rifiuta")?v.scelta:"";}catch(e){return "";}}
+  var DURATA_MS=182*24*60*60*1000; /* scelta valida 6 mesi, poi il banner si ripropone */
+  function leggi(){try{var v=JSON.parse(localStorage.getItem(CHIAVE)||"null");if(!v||(v.scelta!=="accetta"&&v.scelta!=="rifiuta"))return "";var t=Date.parse(v.data);if(!t||Date.now()-t>DURATA_MS){localStorage.removeItem(CHIAVE);return "";}return v.scelta;}catch(e){return "";}}
   function salva(s){try{localStorage.setItem(CHIAVE,JSON.stringify({scelta:s,data:new Date().toISOString()}));}catch(e){}}
 
   var banner=null;
