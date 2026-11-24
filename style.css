@@ -24,3 +24,10 @@ footer{text-align:center;padding:2rem 1rem;color:#4a5466;font-size:.9rem}footer 
 .ds-attesa footer{visibility:hidden}
 /* Link del footer comodi da toccare (almeno 48px) */
 footer a{display:inline-flex;align-items:center;min-height:48px}
+
+
+/* Blocco dati societari (staging/dati-societari-2026-11-24) */
+footer .dati-societari{margin:1rem auto 0;max-width:42rem;text-align:center;line-height:1.55}
+footer .dati-societari a{display:inline;min-height:0}
+footer .link-legali{margin:.35rem 0 0}
+footer .link-legali a{margin:0 .15rem}
